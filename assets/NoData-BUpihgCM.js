@@ -1,0 +1,1 @@
+import{_ as a}from"./index-iMdEkF3s.js";import{ac as t,X as n,Y as s,Z as c,at as r,$ as _}from"./vendor-B41E6fCd.js";const d={},i={class:"noData"};function m(f,o){const e=t("VIcon");return n(),s("div",i,[c("h3",null,[r(e,{icon:["fa","magnifying-glass"]}),o[0]||(o[0]=_(" 找不到資料 "))])])}const N=a(d,[["render",m],["__scopeId","data-v-91ddc7d8"]]);export{N};
