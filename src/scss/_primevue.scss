@@ -1,0 +1,28 @@
+.p-button-outlined.p-button-danger {
+  padding: 5px 15px !important;
+  border-radius: 4px !important;
+  color: var(--danger) !important;
+  border-color: var(--danger) !important;
+  &:hover {
+    box-shadow: var(--shadow-hover-light) !important;
+    color: #fff !important;
+    background: var(--danger) !important;
+    border-color: var(--danger) !important;
+  }
+}
+
+.p-badge-danger {
+  background: var(--danger) !important;
+}
+
+.p-tag-danger {
+  background: var(--danger) !important;
+}
+
+.p-tag-warn {
+  background: var(--warn) !important;
+}
+
+#overlay_menu {
+  z-index: 1030 !important;
+}

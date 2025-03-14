@@ -1,0 +1,36 @@
+body,
+html {
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+textarea:focus,
+input:focus,
+button:focus,
+a:focus,
+select:focus {
+  box-shadow: inset 0 0 0 #fff !important;
+  outline: 0 !important;
+  border-color: #ced4da !important;
+}
+input:hover,
+.p-select:not(.p-disabled):hover,
+.p-focus {
+  border-color: #ced4da !important;
+  box-shadow: inset 0 0 0 #fff !important;
+  outline: 0 !important;
+}
+
+.p-floatlabel:has(.p-inputwrapper-focus) label {
+  color: #64748b !important;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}

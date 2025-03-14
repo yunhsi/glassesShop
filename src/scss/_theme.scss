@@ -1,0 +1,63 @@
+:root {
+  --background-color-light: #fff;
+  --background-color-dark: #000;
+
+  --background-second-color-light: linear-gradient(#eee, #fff, #eee);
+  --background-second-color-dark: linear-gradient(#222, #000, #222);
+
+  --text-color-light: #000;
+  --text-color-dark: #fff;
+
+  --text-second-color-light: #64748b;
+
+  --nav-bg-light: rgba(255, 255, 255, 0.7);
+  --nav-bg-dark: rgba(0, 0, 0, 0.7);
+
+  --shadow-light: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --shadow-dark: 0 0.5rem 1rem rgba(255, 255, 255, 0.25);
+
+  --shadow-hover-light: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+  --shadow-hover-dark: 0 0.25rem 0.5rem rgba(255, 255, 255, 0.25);
+
+  --float-shadow-light: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.35) 0%,
+    rgba(0, 0, 0, 0) 80%
+  );
+  --float-shadow-dark: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0) 80%
+  );
+}
+
+body {
+  background: var(--background-color-light);
+  color: var(--text-color-light);
+  transition:
+    background 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+/* ✅ 深色模式 */
+.dark-mode {
+  --background-color-light: var(--background-color-dark);
+  --background-second-color-light: var(--background-second-color-dark);
+  --text-color-light: var(--text-color-dark);
+  --nav-bg-light: var(--nav-bg-dark);
+  --shadow-light: var(--shadow-dark);
+  --shadow-hover-light: var(--shadow-hover-dark);
+  --float-shadow-light: var(--float-shadow-dark);
+}
+
+.hvr-float-shadow:before {
+  background: var(--float-shadow-light);
+}
+
+.custom-shadow {
+  box-shadow: var(--shadow-light);
+}
+
+a {
+  color: var(--text-color-light);
+}
